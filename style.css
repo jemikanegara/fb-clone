@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    display: grid;
+    grid-template: 1fr / 1fr minmax(70%, 1140px) 1fr;
+}
+
+.grid {
+    display: grid;
+    height: 850px;
+    grid-template: 0.9fr 6fr 1.5fr / repeat(2, 1fr);
+  }
+
+.a {
+    background: #3b5998;
+    position: relative;
+    border-bottom: 1px solid #133783;
+}
+
+    .a .logo {
+        position: absolute;
+        bottom: 20%;
+        left: 20px;
+    }
+
+.b {
+    background: #3b5998;
+    position: relative;
+    border-bottom: 1px solid #133783;
+}
+    .b .login {
+        position: absolute;
+        bottom: 5%;
+        left: 20%;
+    }
+
+        .b .login .logintext {
+            color: white;
+            font-family: Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+        .b .login .forgottext a{
+            color: #9cb4d8;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .b .login .forgottext a:hover{
+            text-decoration: underline;
+        }
+
+        .b table{
+            width: 100%;
+        }
+
+        .b .login td {
+            padding-bottom: 3px;
+        }
+
+        .b .login input{
+            border: #29487d solid 1px;
+            padding: 5px;
+            margin-right: 10px;
+            width: 150px;
+        }
+
+        .b .login #loginbutton {
+            background: #4267b2;
+            cursor: pointer;
+            color: white;
+            margin-right: 0px;
+            width: 52px;
+            font-weight: bold;
+        }
+
+        .b .login #loginbutton:hover {
+            background: #3b5998;
+        }
+
+.c {
+    background: url('http://facebook.com/rsrc.php/v3/yB/r/TwAHgQi2ZPB.png') repeat-x bottom;
+}
+    .c .desc {
+        color: #0e385f;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 29px;
+        margin: 40px 0 0 20px;
+        font-family: Helvetica, sans-serif;
+        width: 450px;
+    }
+
+.d {
+    background: url('http://facebook.com/rsrc.php/v3/yB/r/TwAHgQi2ZPB.png') repeat-x bottom;
+}
+
+    .d .reg {
+        margin-left: 18%;
+        font-family: Helvetica, sans-serif;
+    }
+
+    .d .daftarTitle {
+        font-weight: 600;
+        margin: 25px 0 10px 0;
+        font-size: 36px;
+        color: #333;
+    }
+
+    .d .daftarDesc{
+        font-size: 19px;
+        color: #1d2129;
+        margin-bottom: 20px;
+    }
+    .d .inputDaftar{
+        font-size: 20px;
+        width: 400px;
+        margin-top: 10px;
+    }
+
+    .d .inputDaftar input{
+            width: 399px;
+            height: 39px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            padding: 0 0 0 5px;
+            border: #bdc7d8 solid 1px;
+    }
+
+    .d .inputDaftar input::placeholder{
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+    }
+
+    .d .name {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        grid-gap: 5px;
+    }
+
+    .d .name input{
+        width: 194px;
+    }
+
+    .d .birth {
+        margin-top: 15px;
+    }
+
+        .d .birth .birthTitle{
+            color: #1d2129;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .d .birth .birthDate{
+            display: inline-block;
+        }
+
+        .d .birth select {
+            height: 30px;
+            padding: 5px;
+            border: 1px solid #bdc7d8;
+            margin: 0 -2px;
+        }
+
+    .d .askBirth {
+        font-size: 11px;
+        width: 150px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+
+        .d .gender{
+            margin-top: 20px;
+            font-size: 18px;
+            color: #1d2129;
+            line-height: 18px;
+            padding: 0 10px 0 3px;
+            margin-bottom: 15px;
+        }
+
+        .d .gender input{
+            vertical-align: top;
+        }
+
+        .d .agreement{
+            color: #777;
+            width: 316px;
+            font-size: 11px;
+            margin-bottom: 15px;
+        }
+
+        .d .daftarSubmit {
+            margin-bottom: 50px;
+        }
+
+        .d .daftarSubmit button {
+            font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+            padding: 5px;
+            width: 194px;
+            background: linear-gradient(#67ae55, #578843);
+            box-shadow: inset 0 1px 1px #a4e388;
+            border-radius: 5px;
+            background-color: #69a74e;
+            text-shadow: 0 1px 2px rgba(0,0,0,.5);
+            color: white;
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .d .fanpageNotif{
+            color: #666;
+            font-size: 13px;
+            font-weight: bold;
+        }
+.e {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: white;
+    font-size: 13px;
+    font-family: Helvetica, sans-serif;
+    color: #737373;
+}
+
+    .e .lang{
+        margin-top: 15px;
+        padding-bottom: 5px;
+        border-bottom: solid #999 1px;
+    }
+
+    .e ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .e .lang ul{
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .e ul li{
+        display: inline-block;
+    }
+
+    .e .lang ul li button{
+        padding: 0.5px 10px;
+        font-size: 18px;
+        font-family: Helvetica, sans-serif;
+    }
+
+    .e .plus{
+        vertical-align: middle;
+    }
+
+    .e .link{
+        margin-top: 5px;
+    }
+
+    .e .copyright{
+        margin-top: 30px;
+    }
+
+.gridouter{
+    display: grid;
+    height: 850px;
+    grid-template-rows: 0.9fr 6fr 1.5fr ;
+}
+
+.top {
+    background: #3b5998;
+    border-bottom: 1px solid #133783;
+}
+
+.mid {
+    background: url('http://facebook.com/rsrc.php/v3/yB/r/TwAHgQi2ZPB.png') repeat-x bottom;
+}
+
+.bottom {
+    background: white;
+}
+
