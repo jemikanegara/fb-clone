@@ -129,6 +129,13 @@ body{
         margin-top: 10px;
     }
 
+        .firstName, 
+        .LastName, 
+        .phone,
+        .password {
+            position: relative;
+        }
+
     .d .inputDaftar input{
             width: 399px;
             height: 39px;
@@ -138,6 +145,36 @@ body{
             padding: 0 0 0 5px;
             border: #bdc7d8 solid 1px;
     }
+
+    .inputDaftar .notif {
+        display: none;
+        position: absolute;
+        background: #be4b49;
+        box-shadow: 0 0 0 1px rgba(139, 3, 0, .75), 0 1px 10px rgba(0, 0, 0, .35);
+        color: #fff;
+        font-size: 13px;
+        padding: 15px;
+        z-index: 1;
+    }
+
+    /* Input Form Notification */
+        .firstName .notif {
+            left: -150px;
+            top: -1px;
+        }
+        .LastName .notif {
+            
+        }
+        .phone .notif {
+            left: -350px;
+            top: -1px;
+            width: 300px;
+        }
+        .password .notif {
+            left: -350px;
+            top: -1px;
+            width: 300px;
+        }
 
     .d .inputDaftar input::placeholder{
         font-family: Helvetica, sans-serif;
@@ -181,6 +218,46 @@ body{
         display: inline-block;
         vertical-align: middle;
         margin-left: 5px;
+        position: relative;
+    }
+
+    .d .reasonBirth {
+        display: none;
+    }
+
+    .askBirth:hover .reasonBirth {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        background: white;
+        left: -185%;
+        top: 0px;
+        width: 250px;
+        padding: 10px 10px 2px 10px;
+        font-size: 11px;
+    }
+
+    .askBirth:hover .topBirth {
+        display: block;
+        border-bottom: solid #999 1px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .askBirth:hover .okBirth {
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: flex-end;
+        background: white;
+    }
+
+    .askBirth:hover .okBirth button {
+        background: #4267b2;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        border: #29487d solid 1px;
+        padding: 5px;
     }
 
         .d .gender{
@@ -219,6 +296,7 @@ body{
             color: white;
             font-size: 19px;
             font-weight: 600;
+            cursor: pointer;
         }
 
         .d .fanpageNotif{

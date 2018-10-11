@@ -65,16 +65,20 @@
                         <div class="name">
                             <div class="firstName">
                                 <input type="text" placeholder="Nama Depan">
+                                <div class="notif">Siapa Nama Anda?</div>
                             </div>
                             <div class="lastName">
                                 <input type="text" placeholder="Nama Belakang">
+                                <div class="notif">Siapa Nama Anda?</div>
                             </div>
                         </div>
                         <div class="phone">
                             <input type="email" placeholder="Nomor Seluler atau Email">
+                            <div class="notif">Anda akan menggunakannya saat Anda ingin masuk dan jika Anda perlu untuk mengatur ulang kata sandi Anda.</div>
                         </div>
                         <div class="password">
                             <input type="password" placeholder="Kata Sandi Baru">
+                            <div class="notif">Masukkan kombinasi dari setidaknya enam angka, huruf, dan tanda baca (misalnya ! dan &).</div>
                         </div>
                     </div>
                     <div class="birth">
@@ -250,7 +254,17 @@
                             </select>
                         </div>
                         <div class="askBirth">
-                                <a href="#">Mengapa saya harus memberikan tanggal lahir saya?</a>
+                            <a href="#">Mengapa saya harus memberikan tanggal lahir saya?</a>
+                            <div class="reasonBirth">
+                                <div class="topBirth">
+                                <strong>Mencantumkan tanggal lahir</strong> membantu memastikan Anda mendapatkan pengalaman Facebook yang tepat sesuai usia Anda. Jika Anda ingin mengubah siapa yang melihat ini, buka bagian Tentang pada profil Anda. Untuk rincian selengkapnya, harap kunjungi Kebijakan Data kami.
+                                </div>
+                                <div class="okBirth">
+                                    <div class="okButton">
+                                        <button>Oke</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="gender">
@@ -333,5 +347,38 @@
         <div class="mid"></div>
         <div class="bottom"></div>
     </div>   
+
+    <script>
+        const inputDaftar = document.querySelectorAll('.inputDaftar input');
+        const notifInput = document.querySelectorAll('.inputDaftar .notif');
+
+        for (let i = 0; inputDaftar.length; i++ ){
+            inputDaftar[i].addEventListener('click', showinputDaftar);
+            inputDaftar[i].addEventListener('blur', hideinputDaftar);
+
+            function showinputDaftar(){
+                if(this === inputDaftar[0]){
+                    notifInput[0].style.display = 'block';
+                }
+
+                if(this === inputDaftar[1]){
+                    notifInput[1].style.display = 'block';
+                }
+
+                if(this === inputDaftar[2]){
+                    notifInput[2].style.display = 'block';
+                }
+
+                if(this === inputDaftar[3]){
+                    notifInput[3].style.display = 'block';
+                }
+            }
+
+            function hideinputDaftar () {
+                notifInput[i].style.display = 'none';
+            }
+            
+        }
+    </script>
 </body>
 </html>
